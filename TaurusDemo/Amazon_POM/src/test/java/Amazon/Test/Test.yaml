@@ -1,0 +1,17 @@
+execution:
+  - executor: testng
+    scenario: amazon-test
+
+scenarios:
+  amazon-test:
+    script: ./testng.xml  # Explicit path to the TestNG XML file
+
+modules:
+  testng:
+    autodetect-xml: False
+    classpath:
+      - /home/nashtech/Downloads/Amazon_POM/target/classpath.txt
+      - /home/nashtech/Downloads/Amazon_POM/lib/jcommander-1.82.jar
+
+
+
